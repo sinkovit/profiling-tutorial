@@ -1,4 +1,5 @@
-module load intel
+module load cpu/0.15.4
+module load intel/19.1.1.217
 
 # With function inlining
 ifort -pg -march=core-avx2 -O3 -o intro_inline intro.f
