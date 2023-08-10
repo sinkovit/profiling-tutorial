@@ -1,4 +1,6 @@
 module load gcc
+module load AMDuProf
+
 gfortran -march=znver2 -g -O3 -o dmadd_good dmadd_good.f
 gfortran -march=znver2 -g -O3 -o dmadd_bad  dmadd_bad.f
 
